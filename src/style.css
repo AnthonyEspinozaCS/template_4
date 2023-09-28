@@ -225,6 +225,7 @@ header .container {
   width: fit-content;
   padding: 1rem 1.5rem;
 
+  font-family: var(--ff-sans-normal);
   font-size: var(--fs-medium);
   text-decoration: none;
 
