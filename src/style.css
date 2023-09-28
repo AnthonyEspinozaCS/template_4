@@ -711,6 +711,7 @@ header .container {
   position: relative;
   font-size: var(--fs-header-m);
   font-weight: 400;
+  text-shadow: 0px 0px 3px var(--dark);
 }
 
 .hero-text h3 {
@@ -719,7 +720,7 @@ header .container {
   font-size: clamp(1.5rem, 0.87vw + 1.304rem, 2rem);
   font-weight: 500;
 
-  text-shadow: 0px 0px 2px #007070;
+  text-shadow: 0px 0px 3px var(--dark);
 }
 
 .hero-text a {
