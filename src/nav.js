@@ -16,13 +16,10 @@ navToggle.addEventListener("click", () => {
 });
 
 function myFunction(number) {
-  const bio = document.getElementById(`more-${number}`);
-  const btnText = document.getElementById(`button-${number}`);
-  const dots = document.getElementById(`dots-${number}`);
-  bio.classList.toggle("hidden");
-  dots.classList.toggle("hidden");
-  if (btnText.innerText === "Read More") btnText.innerText = "Read Less";
-  else btnText.innerText = "Read More";
+  const bio = document.getElementById(`bio-${number}`);
+  const btn = document.getElementById(`btn-${number}`);
+  bio.classList.toggle("expanded");
+  btn.classList.toggle("expanded");
 }
 
 // after scrolling down 100px, add .scroll class to the #cs-navigation
