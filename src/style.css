@@ -329,11 +329,6 @@ header .container {
   height: 90%;
 }
 
-.contact-form .btn--link::after,
-.contact-form .btn--link::before {
-  border-color: var(--dark);
-}
-
 .btn-read-more {
   display: flex;
   margin-bottom: 2rem;
@@ -816,7 +811,8 @@ header .container {
 .section-business > h4,
 .darken-img--text > h4,
 .board > h4,
-.section-CTA > h4 {
+.section-CTA > h4,
+.section-contact > h4 {
   position: relative;
   padding: 0.8rem;
   width: 10.25rem;
@@ -1010,23 +1006,26 @@ header .container {
   display: flex;
   gap: 4rem;
   flex-wrap: wrap;
-  padding-left: 2rem;
 }
 
 .board--member {
   display: flex;
   gap: 4rem;
   flex-direction: column;
+  max-height: calc(100vh - 150px);
 }
 
 .board--photo {
   position: relative;
   max-width: min(600px, 100%);
-  width: 100%;
-  height: auto;
+  height: 100%;
   margin-inline: auto;
 
   z-index: 1;
+}
+
+.board--photo img {
+  max-height: 100%;
 }
 
 .board--photo::after {
